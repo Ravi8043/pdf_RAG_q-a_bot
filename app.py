@@ -25,7 +25,7 @@ def extract_text_from_pdf(pdf_path: str) -> str:
     finally:
         if doc:
             doc.close()
-pdf_path = "C:\\Users\\racha\\Desktop\\pdf_qa_bot\\The Art and Science of Effective AI Prompting_ Opt.pdf"
+pdf_path = os.getenv("PDF_PATH")
 
 
 
